@@ -36,6 +36,8 @@ class Mage :
             self.__hand[0] = Cristal
         elif self.__hand[0] == 3 :
             self.__hand[0] = Creature
+        #Il semblerait quce ces fonctions ne s'affiche pas correctement, et je ne sais pas pourquoi. Il en va de même pour les fonctions suivantes.
+        
         #____
         if self.__hand[1] == 1 :
             self.__hand[1] = Blast
@@ -116,6 +118,9 @@ class Blast(Cartes) :
 
 joueur1 = Mage ("Player1",10,25)
 joueur2 = Mage ("Player2",10,25)
+Cristal
+Blast
+Creature
 
 
 while joueur1.gethp() >0 and joueur2.gethp() >0 :
