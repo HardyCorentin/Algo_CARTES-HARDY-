@@ -100,6 +100,8 @@ class Creature(Cartes) :
         self.hp=pv
         self.damages=dmg
         Cartes.__init__(self,"Creature",4,"Summons a monster on the field to help you out.")
+    def gethp(self):
+        return self.hp
 #______________________________________________________________________________________________
 class Blast(Cartes) :
     def __init__(self):
@@ -117,7 +119,7 @@ joueur2 = Mage ("Player2",10,25)
 
 
 while joueur1.gethp() >0 and joueur2.gethp() >0 :
-    print(joueur1.getName,"'s turn to play")
+    print("C'est le tour de",joueur1.getName)
     print("Il vous reste",joueur1.getmanaavailable,"mana.")
     print(joueur1.setHand)
     print("Que choisissez vous ?")
